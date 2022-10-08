@@ -4,6 +4,7 @@ int b = Convert.ToInt32(Console.ReadLine());
 int[,] array2D = CreateMatrixRndInt(3, 4, 0, 10);
 int m = 3;
 int n = 4;
+
 SerchIndex(array2D, a, b, m, n);
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
@@ -25,9 +26,9 @@ void SerchIndex(int[,] array2D, int a, int b, int m, int n)
 {
     if (a >= 0 && b > 0)
     {
-        if (a < m && b <= n)
+        if (a <= m && b <= n)
         {
-            object? c = array2D.GetValue(a, b);
+            object? c = array2D.GetValue(a-1, b-1);
             Console.WriteLine($"====>{c}");
         }
 
