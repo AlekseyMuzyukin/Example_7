@@ -7,7 +7,6 @@ SummIndex(array2D,c);
 Console.WriteLine("Среднее арифмитическое каждого столбца");
 PrintArray2(res);
 
-
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
